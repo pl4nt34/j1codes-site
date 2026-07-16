@@ -24,10 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
       status.className = "form-status";
       status.textContent = "";
 
+      var controller = new AbortController();
+      var timeoutId = setTimeout(function () { controller.abort(); }, 15000);
+
       fetch(form.action, {
         method: "POST",
         body: new FormData(form),
-        headers: { Accept: "application/json" }
+        headers: { Accept: "application/json" },
+        signal: controller.signal
       })
         .then(function (response) {
           if (!response.ok) throw new Error("Formspree responded " + response.status);
@@ -40,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
           status.classList.add("form-status--error");
         })
         .finally(function () {
+          clearTimeout(timeoutId);
           submitting = false;
           if (submitButton) submitButton.disabled = false;
         });
