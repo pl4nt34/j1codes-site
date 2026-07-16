@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J1Codecrafters — Connector inspection that catches what gauges can't</title>
+  <meta name="description" content="J1 catches wire-harness connector defects at the operator station, in real time — the visual escapes that dimensional checks pass. Explainable, fail-closed, deployed on a live tier-one line.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="J1Codecrafters — Connector inspection that catches what gauges can't">
+  <meta property="og:description" content="Real-time visual inspection for wire-harness connectors. Explainable decisions, fail-closed by design.">
+  <meta property="og:image" content="/assets/og-image.png"><!-- REPLACE: supply real OG image -->
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / nav (shared across pages) ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="wordmark" href="index.html" aria-label="J1Codecrafters home">
+        <span class="wordmark__code">&lt;/<span class="wordmark__j1">J1</span>&gt;</span>
+        <span class="wordmark__name">Codecrafters</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <h1>Some defects pass every dimensional check — and still reach your customer.</h1>
+        <p class="lead">J1 catches connector defects at the operator station, in real time, that gauges and fixtures physically can't.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contact.html">Start a conversation</a>
+          <a class="btn btn--secondary" href="product.html">How it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== The problem ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-kicker">The escape</p>
+        <h2>Your fixtures check size. These defects are the right size.</h2>
+        <p class="lead">A harness can pass every continuity and dimensional check on the line and still carry a defect that surfaces at assembly — or in warranty.</p>
+        <ul class="defect-list">
+          <li><strong>Wrong clip, same dimensions.</strong> A look-alike clip seats in the fixture exactly like the correct one. The gauge passes it. The vehicle plant finds it.</li>
+          <li><strong>Broken locking tabs.</strong> The connector mates, the circuit tests good, and the tab that keeps it mated is gone.</li>
+          <li><strong>Missing retainers and unseated CPAs.</strong> Present-or-not, seated-or-not — conditions a dimensional check was never designed to see.</li>
+          <li><strong>Each one is an escape.</strong> Sorted containment, customer complaints, cost of poor quality — for a defect that was visible the whole time.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Why it's different ===== -->
+    <section class="section section--deep">
+      <div class="container">
+        <p class="section-kicker">Why J1</p>
+        <h2>Built for the defects your current controls can't reach.</h2>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__icon">&lt;/&gt;</div>
+            <h3>Catches what fixtures can't</h3>
+            <p>A wrong clip with the right dimensions passes a gauge every time. It doesn't pass a camera. J1 inspects what the part looks like, not just what fits.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">[=]</div>
+            <h3>Explainable, not a black box</h3>
+            <p>Every pass/fail decision is traceable, with photo evidence. When quality asks why a part failed, there is an answer — not a probability.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">[x]</div>
+            <h3>Fails closed</h3>
+            <p>Nothing passes unless it is positively confirmed good. A part the system can't confirm is flagged to a supervisor — it does not ride through.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Credibility line ===== -->
+    <div class="cred-strip">
+      <p><span class="cred-strip__mark">&#10003;</span>Deployed on a live wire-harness line at a tier-one automotive supplier.</p>
+    </div>
+
+    <!-- ===== Closing CTA ===== -->
+    <section class="section cta-band">
+      <div class="container">
+        <h2>Talk to us about your line.</h2>
+        <p class="lead">Tell us the escape that keeps coming back. We'll tell you, plainly, whether J1 can catch it.</p>
+        <a class="btn btn--primary" href="contact.html">Contact us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (shared across pages) ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="wordmark" href="index.html" aria-label="J1Codecrafters home">
+        <span class="wordmark__code">&lt;/<span class="wordmark__j1">J1</span>&gt;</span>
+        <span class="wordmark__name">Codecrafters</span>
+      </a>
+      <p><a href="mailto:contact@j1codes.com">contact@j1codes.com</a></p>
+      <p>&copy; 2026 J1Codecrafters</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

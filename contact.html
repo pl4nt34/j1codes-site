@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — J1Codecrafters</title>
+  <meta name="description" content="Talk to J1Codecrafters about connector inspection on your line. Reach us through the form or at contact@j1codes.com.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact J1Codecrafters">
+  <meta property="og:description" content="Talk to us about connector inspection on your line.">
+  <meta property="og:image" content="/assets/og-image.png"><!-- REPLACE: supply real OG image -->
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / nav (shared across pages) ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="wordmark" href="index.html" aria-label="J1Codecrafters home">
+        <span class="wordmark__code">&lt;/<span class="wordmark__j1">J1</span>&gt;</span>
+        <span class="wordmark__name">Codecrafters</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Page intro ===== -->
+    <section class="hero">
+      <div class="container">
+        <p class="section-kicker">Contact</p>
+        <h1>Tell us about your line.</h1>
+        <p class="lead">The defect, the volume, the current controls — whatever you have. We'll respond with a straight answer.</p>
+      </div>
+    </section>
+
+    <!-- ===== Form + direct email ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact form (Formspree) -->
+          <form class="contact-form" action="https://formspree.io/f/xojgeqez" method="POST">
+            <input type="hidden" name="_subject" value="New inquiry from j1codes.com">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" autocomplete="organization">
+
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button class="btn btn--primary" type="submit">Send message</button>
+
+            <!-- Inline submit result (filled by main.js; no page reload) -->
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Direct contact -->
+          <aside class="contact-aside">
+            <h3>Prefer email?</h3>
+            <p>Write to us directly at <a href="mailto:contact@j1codes.com">contact@j1codes.com</a>.</p>
+            <p>We read everything. If your question is "can it catch this defect," include a photo if you can — it's usually enough for a first answer.</p>
+
+            <p class="privacy-note">Your details go to Formspree, which delivers them to us. We use them only to reply to you — never sold, never shared.</p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (shared across pages) ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a class="wordmark" href="index.html" aria-label="J1Codecrafters home">
+        <span class="wordmark__code">&lt;/<span class="wordmark__j1">J1</span>&gt;</span>
+        <span class="wordmark__name">Codecrafters</span>
+      </a>
+      <p><a href="mailto:contact@j1codes.com">contact@j1codes.com</a></p>
+      <p>&copy; 2026 J1Codecrafters</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
