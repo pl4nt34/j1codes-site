@@ -24,7 +24,7 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="wordmark" href="index.html" aria-label="J1Codecrafters home">
-        <span class="wordmark__code">&lt;/J1&gt;</span>
+        <span class="wordmark__code">&lt;/<span class="wordmark__j1">J1</span>&gt;</span>
         <span class="wordmark__name">Codecrafters</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">&#9776;</button>
@@ -73,6 +73,9 @@
             <textarea id="message" name="message" required></textarea>
 
             <button class="btn btn--primary" type="submit">Send message</button>
+
+            <!-- Inline submit result (filled by main.js; no page reload) -->
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
 
           <!-- Direct contact -->
@@ -80,6 +83,8 @@
             <h3>Prefer email?</h3>
             <p>Write to us directly at <a href="mailto:contact@j1codes.com">contact@j1codes.com</a>.</p>
             <p>We read everything. If your question is "can it catch this defect," include a photo if you can — it's usually enough for a first answer.</p>
+
+            <p class="privacy-note">Your details go to Formspree, which delivers them to us. We use them only to reply to you — never sold, never shared.</p>
           </aside>
 
         </div>
@@ -92,7 +97,7 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <a class="wordmark" href="index.html" aria-label="J1Codecrafters home">
-        <span class="wordmark__code">&lt;/J1&gt;</span>
+        <span class="wordmark__code">&lt;/<span class="wordmark__j1">J1</span>&gt;</span>
         <span class="wordmark__name">Codecrafters</span>
       </a>
       <p><a href="mailto:contact@j1codes.com">contact@j1codes.com</a></p>

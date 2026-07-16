@@ -5,14 +5,14 @@ Cloudflare Pages serves the files as-is.
 
 ## Layout
 
-```
+```text
 index.html      Home — hero, the escape problem, why J1, credibility, CTA
 product.html    How it works — hybrid principle, coverage, fail-closed, traceability
 demo.html       Demo — 3 placeholder video slots (see below)
 about.html      About — company story and mission
 contact.html    Contact — Formspree form + mailto
 styles.css      All styling (palette variables at the top)
-main.js         Mobile nav toggle only
+main.js         Mobile nav toggle + AJAX contact-form submit
 assets/         logo.svg, favicon.svg (placeholders — replace when ready)
 ```
 
@@ -42,8 +42,10 @@ Delete the placeholder `<div class="video-slot__frame">…</div>` and drop in a
 ## Contact form
 
 The form posts to Formspree (`https://formspree.io/f/xojgeqez`) — public endpoint
-by design, no backend. Formspree's default thank-you redirect handles submission.
-The `_subject` hidden field sets the notification email subject.
+by design, no backend. `main.js` submits it with `fetch()` (header
+`Accept: application/json`) so the page doesn't reload; success and error messages
+show inline below the button. The `_subject` hidden field sets the notification
+email subject.
 
 ## Deploying (Cloudflare Pages)
 

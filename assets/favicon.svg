@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <!-- Favicon placeholder: J1 monogram on near-black -->
+  <!-- Favicon placeholder: </J1> mark — gold brackets, white J1 — on near-black -->
   <rect width="64" height="64" rx="12" fill="#0b0f17"/>
-  <text x="32" y="43" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="28" font-weight="700" fill="#f5b301">J1</text>
+  <text x="32" y="40" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700"><tspan fill="#f5b301">&lt;/</tspan><tspan fill="#e8edf6">J1</tspan><tspan fill="#f5b301">&gt;</tspan></text>
 </svg>

@@ -99,9 +99,11 @@ img { max-width: 100%; height: auto; }
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 1.35rem;
-  color: var(--accent);
+  color: var(--accent); /* brackets and slash — gold frames the white J1 */
   letter-spacing: 0.02em;
 }
+
+.wordmark__j1 { color: var(--ink); }
 
 .wordmark__name {
   font-family: var(--font-heading);
@@ -467,6 +469,24 @@ img { max-width: 100%; height: auto; }
 }
 
 .contact-aside h3 { color: var(--ink); }
+
+.privacy-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Inline form submit result (hidden until main.js sets a state class) */
+.form-status {
+  display: none;
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+
+.form-status--success { display: block; color: var(--success); }
+.form-status--error { display: block; color: var(--accent); }
 
 /* ---------- Footer ---------- */
 
